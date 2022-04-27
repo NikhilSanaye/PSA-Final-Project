@@ -1,6 +1,7 @@
 package com.project;
 
 public class StringScore {
+	//Object to store counter moves & score
 	String counterMove;
 	int score;
 	public String getCounterMove() {

@@ -269,7 +269,7 @@ class TicTacToe {
 			for(StringScore s:x) {
 				if(s.getCounterMove().equals(value)) {
 					s.setScore(s.getScore()+point);
-					//uncomment to see print scores
+					//uncomment to print scores
 					//System.out.println("Move "+key+","+value+" "+s.score);
 				}
 			}
@@ -288,7 +288,6 @@ class TicTacToe {
 			list.add(ss);
 			mp.put(boardBeforeCompMove, list);
 		}
-
 	}
 
 	private static void addExistingKey(String st1, String st2) {
@@ -340,7 +339,7 @@ class TicTacToe {
 		ArrayList<String> movesCollection= new ArrayList<String>();
 
 		if(null!=listMoves && listMoves.size()>0) {
-			//create instances of available counter moves
+			//create instances of available counter moves and then select random counter move
 			//number of instances is equal to the score of the move
 			for(StringScore s:listMoves) {
 				for(int i=0;i<s.getScore();i++) {
