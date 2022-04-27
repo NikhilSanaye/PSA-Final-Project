@@ -38,8 +38,8 @@ class TicTacToe {
 
 		LOGGER.info("Value of alpha(initial state) is: "+ alpha);
 		LOGGER.info("Value of beta(event of win) is: "+ beta);
-		LOGGER.info("Value of gamma(event of draw) is: "+ gamma);
-		LOGGER.info("Value of delta(event of loss) is: "+ delta);
+		LOGGER.info("Value of gamma(event of loss) is: "+ gamma);
+		LOGGER.info("Value of delta(event of draw) is: "+ delta);
 
 		int input =0;
 
