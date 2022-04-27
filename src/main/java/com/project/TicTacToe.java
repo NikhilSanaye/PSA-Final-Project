@@ -32,6 +32,7 @@ class TicTacToe {
 	static Scanner in;
 	static char c = '-';
 
+
 	public static void main(String[] args) {
 
 		LOGGER.info("Game has started");
