@@ -52,7 +52,7 @@ public class TicTacToeTest {
                 {'-','-','-'}
         };
         char c='x';
-        TicTacToe.makeRandomMove(board,c);
+        TicTacToe.makeMovesForTrainingMenace(board,c);
         countVariableInBoard(board,c);
         assertEquals(2, 2);
     }
@@ -105,7 +105,24 @@ public class TicTacToeTest {
                 {'o','x','-'},
                 {'o','-','-'}
         };
-        assertEquals(2, TicTacToe.checkDiagonals(board));
+        int x=TicTacToe.checkDiagonals(board).get(0);
+        int y=TicTacToe.checkDiagonals(board).get(1);
+        assertEquals(2,x);
+        assertEquals(2,y);
+    }
+
+    @Test
+    public void checkDiagonals2() {
+        //2,0 is empty
+        char[][] board= {
+                {'o','-','x'},
+                {'o','x','-'},
+                {'-','-','-'}
+        };
+        int x=TicTacToe.checkDiagonals(board).get(0);
+        int y=TicTacToe.checkDiagonals(board).get(1);
+        assertEquals(2,x);
+        assertEquals(0,y);
     }
 
     @Test
