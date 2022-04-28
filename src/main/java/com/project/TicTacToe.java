@@ -32,7 +32,6 @@ class TicTacToe {
 	static Scanner in;
 	static char c = '-';
 
-
 	public static void main(String[] args) {
 
 		LOGGER.info("Game has started");
@@ -258,7 +257,6 @@ class TicTacToe {
 			// increase points  with delta of all the moves in case of tie
 			modifyScores(storeGameMoves, delta);
 		}
-
 	}
 
 	private static void modifyScores(Map<String, String> storeGameMoves, int point) {
@@ -451,7 +449,6 @@ class TicTacToe {
 			}
 		}
 		return false;
-
 	}
 
 	//method to check if rows contain 2 x's
